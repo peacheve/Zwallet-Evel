@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="homepage" id="Y6W-OH-hqX" customClass="ViewController" customModule="Zwallet_Evel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO4-nJ-dtP">
+                                <rect key="frame" x="1" y="0.0" width="392" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Anw-OS-L6n">
+                                        <rect key="frame" x="0.0" y="0.0" width="392" height="860"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5b-9q-QLf" userLabel="Short Profile" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="20" width="352" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-M1-6V1" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="352" height="100"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <connections>
+                                                            <action selector="shortProfileTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tvk-rO-UfA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JProfile" translatesAutoresizingMaskIntoConstraints="NO" id="V0r-Eu-fnQ" customClass="CustomImage" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="TEJ-sq-O0R"/>
+                                                            <constraint firstAttribute="width" constant="60" id="tlo-Xu-rJ3"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZ1-kn-odY">
+                                                        <rect key="frame" x="100" y="24" width="46" height="21"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                        <color key="textColor" name="Font2"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jamal Jeffrey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJx-w9-Ctk">
+                                                        <rect key="frame" x="100" y="52" width="111" height="21.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOs-ED-xGf" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="308" y="40" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="36f-NI-g5x"/>
+                                                            <constraint firstAttribute="height" constant="24" id="VmS-RR-Qu0"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="SecondaryBlack"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="bell" catalog="system">
+                                                            <color key="titleColor" name="SecondaryBlack"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="SecondaryButton"/>
+                                                <constraints>
+                                                    <constraint firstItem="fqJ-M1-6V1" firstAttribute="height" secondItem="h5b-9q-QLf" secondAttribute="height" id="9Rr-RG-777"/>
+                                                    <constraint firstItem="V0r-Eu-fnQ" firstAttribute="leading" secondItem="h5b-9q-QLf" secondAttribute="leading" constant="20" id="BDj-rp-4L5"/>
+                                                    <constraint firstItem="fqJ-M1-6V1" firstAttribute="centerY" secondItem="V0r-Eu-fnQ" secondAttribute="centerY" id="NG4-Zf-z26"/>
+                                                    <constraint firstItem="pZ1-kn-odY" firstAttribute="leading" secondItem="h5b-9q-QLf" secondAttribute="leading" constant="100" id="NNL-Fe-2SI"/>
+                                                    <constraint firstItem="fqJ-M1-6V1" firstAttribute="width" secondItem="h5b-9q-QLf" secondAttribute="width" id="Qy2-Y6-WCH"/>
+                                                    <constraint firstItem="BOs-ED-xGf" firstAttribute="top" secondItem="h5b-9q-QLf" secondAttribute="top" constant="40" id="SFb-R7-0WX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BOs-ED-xGf" secondAttribute="trailing" constant="20" id="TfX-Pq-Vva"/>
+                                                    <constraint firstItem="fqJ-M1-6V1" firstAttribute="centerX" secondItem="h5b-9q-QLf" secondAttribute="centerX" id="cmk-vO-AWD"/>
+                                                    <constraint firstItem="HJx-w9-Ctk" firstAttribute="leading" secondItem="pZ1-kn-odY" secondAttribute="leading" id="ehc-pZ-fas"/>
+                                                    <constraint firstItem="HJx-w9-Ctk" firstAttribute="top" secondItem="h5b-9q-QLf" secondAttribute="top" constant="52" id="mQh-J5-TT0"/>
+                                                    <constraint firstItem="V0r-Eu-fnQ" firstAttribute="top" secondItem="h5b-9q-QLf" secondAttribute="top" constant="20" id="rJ4-OW-Arp"/>
+                                                    <constraint firstItem="pZ1-kn-odY" firstAttribute="top" secondItem="h5b-9q-QLf" secondAttribute="top" constant="24" id="rKP-un-HtL"/>
+                                                    <constraint firstAttribute="height" constant="100" id="zgO-LD-HCH"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7k-oH-l7E" userLabel="Balance" customClass="CustomPopUpPage" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                <rect key="frame" x="19.666666666666657" y="140" width="353" height="140"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NVf-ao-oRc">
+                                                        <rect key="frame" x="24" y="23.999999999999993" width="305" height="93.333333333333314"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7d-1f-I9z">
+                                                                <rect key="frame" x="0.0" y="0.0" width="305" height="16.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                <color key="textColor" name="DisabledButton"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp120.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiA-9G-l0Z">
+                                                                <rect key="frame" x="0.0" y="32.333333333333343" width="305" height="28.666666666666671"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                                                <color key="textColor" name="BaseColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+62 813-9387-7946" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-N4-eZ1">
+                                                                <rect key="frame" x="0.0" y="77" width="305" height="16.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                <color key="textColor" name="DisabledButton"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Primary"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="4gd-Pa-Cme"/>
+                                                    <constraint firstItem="NVf-ao-oRc" firstAttribute="leading" secondItem="R7k-oH-l7E" secondAttribute="leading" constant="24" id="Eon-e7-hLO"/>
+                                                    <constraint firstAttribute="width" constant="353" id="G5T-pi-fs9"/>
+                                                    <constraint firstItem="NVf-ao-oRc" firstAttribute="top" secondItem="R7k-oH-l7E" secondAttribute="top" constant="24" id="dxp-OX-uRJ"/>
+                                                    <constraint firstItem="NVf-ao-oRc" firstAttribute="centerX" secondItem="R7k-oH-l7E" secondAttribute="centerX" id="hvY-3h-d1K"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="H6E-ow-hZf">
+                                                <rect key="frame" x="20" y="320" width="352" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8B-Ob-kwd" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+                                                        <color key="backgroundColor" name="SecondaryButton"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="1Ie-K1-PAV"/>
+                                                            <constraint firstAttribute="width" constant="160" id="a3R-3d-Tqv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <color key="tintColor" name="Primary"/>
+                                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Transfer">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                            <imageReference key="image" image="arrow.up" catalog="system" symbolScale="default"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="transferButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mMr-uG-GcW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMY-IR-3JE" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="192" y="0.0" width="160" height="60"/>
+                                                        <color key="backgroundColor" name="SecondaryButton"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Ame-SQ-Kr6"/>
+                                                            <constraint firstAttribute="width" constant="160" id="IGz-ue-3mg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <color key="tintColor" name="Primary"/>
+                                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Top Up">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                            <imageReference key="image" image="plus" catalog="system" symbolScale="default"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="bold">
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            </preferredSymbolConfiguration>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="topUpButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5q6-TP-90c"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fP-yG-2Zt">
+                                                <rect key="frame" x="20" y="408" width="160.66666666666666" height="21.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGJ-pk-Muu">
+                                                <rect key="frame" x="320" y="408" width="46" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="See All">
+                                                    <color key="titleColor" name="Primary"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="historyTextTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nDY-aN-Jgx"/>
+                                                </connections>
+                                            </button>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MHI-r3-UAP">
+                                                <rect key="frame" x="20" y="465" width="352" height="387"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="860" id="0Qt-im-XXs"/>
+                                            <constraint firstItem="h5b-9q-QLf" firstAttribute="top" secondItem="Anw-OS-L6n" secondAttribute="top" constant="20" id="8bB-jS-0IW"/>
+                                            <constraint firstItem="MHI-r3-UAP" firstAttribute="top" secondItem="CGJ-pk-Muu" secondAttribute="bottom" constant="28" id="Bha-h2-3bw"/>
+                                            <constraint firstAttribute="trailing" secondItem="H6E-ow-hZf" secondAttribute="trailing" constant="20" id="JFl-vW-5Bj"/>
+                                            <constraint firstItem="H6E-ow-hZf" firstAttribute="top" secondItem="R7k-oH-l7E" secondAttribute="bottom" constant="40" id="Szi-Ms-3PE"/>
+                                            <constraint firstItem="R7k-oH-l7E" firstAttribute="centerX" secondItem="Anw-OS-L6n" secondAttribute="centerX" id="UI8-VB-M0m"/>
+                                            <constraint firstItem="CGJ-pk-Muu" firstAttribute="top" secondItem="0fP-yG-2Zt" secondAttribute="top" id="VKl-PN-4uJ"/>
+                                            <constraint firstItem="h5b-9q-QLf" firstAttribute="leading" secondItem="Anw-OS-L6n" secondAttribute="leading" constant="20" id="Vq6-KI-fAG"/>
+                                            <constraint firstItem="0fP-yG-2Zt" firstAttribute="top" secondItem="H6E-ow-hZf" secondAttribute="bottom" constant="28" id="Zgr-2s-3o4"/>
+                                            <constraint firstAttribute="trailing" secondItem="h5b-9q-QLf" secondAttribute="trailing" constant="20" id="a2w-vL-7F0"/>
+                                            <constraint firstItem="CGJ-pk-Muu" firstAttribute="leading" secondItem="0fP-yG-2Zt" secondAttribute="leading" constant="300" id="cd4-C3-bNM"/>
+                                            <constraint firstItem="H6E-ow-hZf" firstAttribute="centerX" secondItem="Anw-OS-L6n" secondAttribute="centerX" id="gNe-Jm-ICS"/>
+                                            <constraint firstAttribute="bottom" secondItem="MHI-r3-UAP" secondAttribute="bottom" constant="8" id="i7B-0b-oeH"/>
+                                            <constraint firstItem="MHI-r3-UAP" firstAttribute="leading" secondItem="0fP-yG-2Zt" secondAttribute="leading" id="mad-Pb-6Xb"/>
+                                            <constraint firstItem="0fP-yG-2Zt" firstAttribute="leading" secondItem="Anw-OS-L6n" secondAttribute="leading" constant="20" id="oVl-WY-gEJ"/>
+                                            <constraint firstItem="R7k-oH-l7E" firstAttribute="top" secondItem="h5b-9q-QLf" secondAttribute="bottom" constant="20" id="ris-Ym-ZLb"/>
+                                            <constraint firstItem="MHI-r3-UAP" firstAttribute="centerX" secondItem="Anw-OS-L6n" secondAttribute="centerX" id="sQE-dD-nqv"/>
+                                            <constraint firstItem="H6E-ow-hZf" firstAttribute="leading" secondItem="Anw-OS-L6n" secondAttribute="leading" constant="20" id="xSJ-VS-h31"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Anw-OS-L6n" secondAttribute="bottom" id="5Sc-VP-l1n"/>
+                                    <constraint firstItem="Anw-OS-L6n" firstAttribute="centerX" secondItem="qO4-nJ-dtP" secondAttribute="centerX" id="HAt-R0-ENb"/>
+                                    <constraint firstItem="Anw-OS-L6n" firstAttribute="top" secondItem="qO4-nJ-dtP" secondAttribute="top" id="V1Z-id-xdw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Anw-OS-L6n" secondAttribute="trailing" id="VnP-51-snJ"/>
+                                    <constraint firstItem="Anw-OS-L6n" firstAttribute="leading" secondItem="qO4-nJ-dtP" secondAttribute="leading" id="g3h-6T-tSI"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="KTg-B8-X4N"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Fa1-Xg-TpG"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qO4-nJ-dtP" secondAttribute="trailing" id="AUG-mB-nSU"/>
+                            <constraint firstItem="qO4-nJ-dtP" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Dn3-P5-EgI"/>
+                            <constraint firstAttribute="bottom" secondItem="qO4-nJ-dtP" secondAttribute="bottom" id="vhx-VT-M40"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Q4i-7e-1yI"/>
+                    <connections>
+                        <outlet property="historyTextButton" destination="CGJ-pk-Muu" id="zQJ-D2-ssl"/>
+                        <outlet property="notificationButton" destination="BOs-ED-xGf" id="89x-VQ-j1d"/>
+                        <outlet property="popUpPage" destination="R7k-oH-l7E" id="Or6-13-7Id"/>
+                        <outlet property="shortProfileButton" destination="fqJ-M1-6V1" id="YIL-Uj-mNt"/>
+                        <outlet property="tableView" destination="MHI-r3-UAP" id="UKC-WE-c24"/>
+                        <outlet property="topUpButton" destination="BMY-IR-3JE" id="4Ps-7c-ujl"/>
+                        <outlet property="transferButton" destination="n8B-Ob-kwd" id="fOM-4I-Jam"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701.52671755725191" y="-9.1549295774647899"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NU0-M3-pqn">
+            <objects>
+                <tabBarController storyboardIdentifier="Tabbar" automaticallyAdjustsScrollViewInsets="NO" id="7NE-wI-erJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0fU-Vi-88c">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="upY-j1-skz"/>
+                        <segue destination="0Uv-DE-784" kind="relationship" relationship="viewControllers" id="Wan-5k-bd0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kc0-A3-eGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225.19083969465649" y="-9.1549295774647899"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="gT9-jM-p3u">
+            <objects>
+                <viewController storyboardIdentifier="profile" id="0Uv-DE-784" customClass="ProfileViewController" customModule="Zwallet_Evel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F7e-8I-kbR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mps-Wp-Xtv">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZW-vp-rJ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JProfile" translatesAutoresizingMaskIntoConstraints="NO" id="R5x-hN-8UP" customClass="CustomImage" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                <rect key="frame" x="156.66666666666666" y="80" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="7xf-89-62n"/>
+                                                    <constraint firstAttribute="width" constant="80" id="iP9-09-Z4y"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Zhv-Fd-lkm">
+                                                <rect key="frame" x="117" y="180" width="159" height="105"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-wg-c9X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="159" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Edit" image="pencil" catalog="system">
+                                                            <color key="titleColor" name="Primary"/>
+                                                        </state>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jamal Jeffrey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuA-Xq-luh">
+                                                        <rect key="frame" x="0.0" y="38" width="159" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+62 813-9387-7946" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7k-oA-naG">
+                                                        <rect key="frame" x="0.0" y="84.666666666666686" width="159" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" name="SecondaryBlack"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ceD-9w-eTl">
+                                                <rect key="frame" x="20" y="325" width="353" height="423.33333333333326"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-b8-V4V" userLabel="Info Button" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="64.333333333333329"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-YC-dCp">
+                                                                <rect key="frame" x="307" y="21.999999999999993" width="26" height="20.666666666666671"/>
+                                                                <color key="tintColor" name="SecondaryBlack"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-oh-ZTF">
+                                                                <rect key="frame" x="20" y="16.000000000000004" width="158" height="32.333333333333343"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Personal Information">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="qlS-YC-dCp" firstAttribute="top" secondItem="Jbg-b8-V4V" secondAttribute="top" constant="21.999999999999996" id="Jnc-Jj-ehy"/>
+                                                            <constraint firstItem="dOH-oh-ZTF" firstAttribute="centerY" secondItem="Jbg-b8-V4V" secondAttribute="centerY" id="JxZ-Pi-kjx"/>
+                                                            <constraint firstItem="dOH-oh-ZTF" firstAttribute="leading" secondItem="Jbg-b8-V4V" secondAttribute="leading" constant="20" id="ThY-Di-RIg"/>
+                                                            <constraint firstAttribute="bottom" secondItem="dOH-oh-ZTF" secondAttribute="bottom" constant="16" id="Y8G-zM-3tC"/>
+                                                            <constraint firstAttribute="trailing" secondItem="qlS-YC-dCp" secondAttribute="trailing" constant="20" id="aDP-a3-bYC"/>
+                                                            <constraint firstItem="qlS-YC-dCp" firstAttribute="centerY" secondItem="dOH-oh-ZTF" secondAttribute="centerY" id="gyw-mr-PnK"/>
+                                                            <constraint firstItem="dOH-oh-ZTF" firstAttribute="top" secondItem="Jbg-b8-V4V" secondAttribute="top" constant="16" id="zl4-tx-0Mm"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="24"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-pm-ias" userLabel="Info Button" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="88.333333333333314" width="353" height="64.333333333333314"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mUo-S0-1Ax">
+                                                                <rect key="frame" x="307" y="21.999999999999993" width="26" height="20.666666666666671"/>
+                                                                <color key="tintColor" name="SecondaryBlack"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raJ-z8-8yh">
+                                                                <rect key="frame" x="20" y="16.000000000000004" width="136" height="32.333333333333343"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Change Password">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="mUo-S0-1Ax" firstAttribute="centerY" secondItem="raJ-z8-8yh" secondAttribute="centerY" id="090-AH-LJP"/>
+                                                            <constraint firstItem="raJ-z8-8yh" firstAttribute="top" secondItem="Cah-pm-ias" secondAttribute="top" constant="16" id="GrY-hf-W3o"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mUo-S0-1Ax" secondAttribute="trailing" constant="20" id="UlG-UX-LYM"/>
+                                                            <constraint firstItem="raJ-z8-8yh" firstAttribute="centerY" secondItem="Cah-pm-ias" secondAttribute="centerY" id="aRX-K2-OjC"/>
+                                                            <constraint firstAttribute="bottom" secondItem="raJ-z8-8yh" secondAttribute="bottom" constant="16" id="b3b-Sv-LUU"/>
+                                                            <constraint firstItem="mUo-S0-1Ax" firstAttribute="top" secondItem="Cah-pm-ias" secondAttribute="top" constant="21.999999999999996" id="ieO-0F-5le"/>
+                                                            <constraint firstItem="raJ-z8-8yh" firstAttribute="leading" secondItem="Cah-pm-ias" secondAttribute="leading" constant="20" id="mSR-XS-7TO"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="24"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHc-yL-ZTq" userLabel="Info Button" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="176.66666666666669" width="353" height="64.333333333333314"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-P1-17e">
+                                                                <rect key="frame" x="307" y="21.999999999999936" width="26" height="20.666666666666671"/>
+                                                                <color key="tintColor" name="SecondaryBlack"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmj-HV-TlA">
+                                                                <rect key="frame" x="20" y="15.999999999999947" width="89" height="32.333333333333343"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Change PIN">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Kmj-HV-TlA" firstAttribute="centerY" secondItem="KHc-yL-ZTq" secondAttribute="centerY" id="20R-55-3q5"/>
+                                                            <constraint firstItem="Kmj-HV-TlA" firstAttribute="top" secondItem="KHc-yL-ZTq" secondAttribute="top" constant="16" id="5fH-Pz-aLo"/>
+                                                            <constraint firstItem="dLz-P1-17e" firstAttribute="centerY" secondItem="Kmj-HV-TlA" secondAttribute="centerY" id="XSf-0G-oNn"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Kmj-HV-TlA" secondAttribute="bottom" constant="16" id="fcp-Kv-oR5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dLz-P1-17e" secondAttribute="trailing" constant="20" id="tLs-ry-yhf"/>
+                                                            <constraint firstItem="Kmj-HV-TlA" firstAttribute="leading" secondItem="KHc-yL-ZTq" secondAttribute="leading" constant="20" id="ubr-xF-tVl"/>
+                                                            <constraint firstItem="dLz-P1-17e" firstAttribute="top" secondItem="KHc-yL-ZTq" secondAttribute="top" constant="21.999999999999996" id="vTU-xq-ZEE"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="24"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-Ke-wFQ" userLabel="Info Button" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="265" width="353" height="70"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="off" translatesAutoresizingMaskIntoConstraints="NO" id="H2o-vo-3UO">
+                                                                <rect key="frame" x="285" y="22" width="48" height="26"/>
+                                                                <color key="tintColor" name="SecondaryBlack"/>
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PR-8f-cxa">
+                                                                <rect key="frame" x="20" y="16" width="89" height="38"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Notification">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="9PR-8f-cxa" secondAttribute="bottom" constant="16" id="63b-13-PpK"/>
+                                                            <constraint firstItem="9PR-8f-cxa" firstAttribute="top" secondItem="GGQ-Ke-wFQ" secondAttribute="top" constant="16" id="Gwg-vQ-Rzf"/>
+                                                            <constraint firstItem="H2o-vo-3UO" firstAttribute="top" secondItem="GGQ-Ke-wFQ" secondAttribute="top" constant="21.999999999999996" id="Qb1-ZA-QzM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="H2o-vo-3UO" secondAttribute="trailing" constant="20" id="UVW-jY-pDA"/>
+                                                            <constraint firstItem="9PR-8f-cxa" firstAttribute="centerY" secondItem="GGQ-Ke-wFQ" secondAttribute="centerY" id="bz5-UQ-3sc"/>
+                                                            <constraint firstItem="9PR-8f-cxa" firstAttribute="leading" secondItem="GGQ-Ke-wFQ" secondAttribute="leading" constant="20" id="nOI-Zi-i3H"/>
+                                                            <constraint firstItem="H2o-vo-3UO" firstAttribute="centerY" secondItem="9PR-8f-cxa" secondAttribute="centerY" id="y95-wA-yu5"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="24"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hD2-Vt-mAn" userLabel="Info Button" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="359" width="353" height="64.333333333333314"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rR-9x-lqJ" customClass="CustomButton" customModule="Zwallet_Evel" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="16.000000000000004" width="313" height="32.333333333333343"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Logout">
+                                                                    <color key="titleColor" name="Error"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="logOutTapped:" destination="0Uv-DE-784" eventType="touchUpInside" id="jvo-tl-R36"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="9rR-9x-lqJ" firstAttribute="top" secondItem="hD2-Vt-mAn" secondAttribute="top" constant="16" id="4BI-52-cjT"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9rR-9x-lqJ" secondAttribute="bottom" constant="16" id="Fa0-eW-JbR"/>
+                                                            <constraint firstItem="9rR-9x-lqJ" firstAttribute="centerY" secondItem="hD2-Vt-mAn" secondAttribute="centerY" id="Gdb-hU-aBF"/>
+                                                            <constraint firstItem="9rR-9x-lqJ" firstAttribute="leading" secondItem="hD2-Vt-mAn" secondAttribute="leading" constant="20" id="Tyh-aS-b9l"/>
+                                                            <constraint firstItem="9rR-9x-lqJ" firstAttribute="centerX" secondItem="hD2-Vt-mAn" secondAttribute="centerX" id="kag-GQ-HJo"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Jbg-b8-V4V" firstAttribute="width" secondItem="ceD-9w-eTl" secondAttribute="width" id="Caz-ub-cNK"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Background"/>
+                                        <constraints>
+                                            <constraint firstItem="R5x-hN-8UP" firstAttribute="top" secondItem="wZW-vp-rJ7" secondAttribute="top" constant="80" id="1Y0-Pe-u3j"/>
+                                            <constraint firstItem="ceD-9w-eTl" firstAttribute="centerX" secondItem="Zhv-Fd-lkm" secondAttribute="centerX" id="5Wj-Pp-fPZ"/>
+                                            <constraint firstItem="ceD-9w-eTl" firstAttribute="leading" secondItem="wZW-vp-rJ7" secondAttribute="leading" constant="20" id="H8s-wG-4YM"/>
+                                            <constraint firstItem="R5x-hN-8UP" firstAttribute="centerX" secondItem="wZW-vp-rJ7" secondAttribute="centerX" id="Ifa-ZV-kXh"/>
+                                            <constraint firstItem="ceD-9w-eTl" firstAttribute="top" secondItem="Zhv-Fd-lkm" secondAttribute="bottom" constant="40" id="Ldg-Z3-bHT"/>
+                                            <constraint firstItem="Zhv-Fd-lkm" firstAttribute="top" secondItem="R5x-hN-8UP" secondAttribute="bottom" constant="20" id="OfI-3Z-JdD"/>
+                                            <constraint firstItem="Zhv-Fd-lkm" firstAttribute="centerX" secondItem="wZW-vp-rJ7" secondAttribute="centerX" id="ZwJ-Ax-EPf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wZW-vp-rJ7" firstAttribute="top" secondItem="mps-Wp-Xtv" secondAttribute="top" id="CFg-x9-v7L"/>
+                                    <constraint firstItem="wZW-vp-rJ7" firstAttribute="bottom" secondItem="yIC-KG-56l" secondAttribute="bottom" id="DRy-Qp-GcW"/>
+                                    <constraint firstAttribute="bottom" secondItem="wZW-vp-rJ7" secondAttribute="bottom" id="Kxd-O3-sGy"/>
+                                    <constraint firstAttribute="trailing" secondItem="wZW-vp-rJ7" secondAttribute="trailing" id="RVy-vP-MF0"/>
+                                    <constraint firstItem="wZW-vp-rJ7" firstAttribute="leading" secondItem="mps-Wp-Xtv" secondAttribute="leading" id="dSe-l6-ep7"/>
+                                    <constraint firstItem="wZW-vp-rJ7" firstAttribute="centerX" secondItem="mps-Wp-Xtv" secondAttribute="centerX" id="iKH-3D-ZXm"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="9vL-Ut-H96"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="yIC-KG-56l"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ldt-cF-JYf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mps-Wp-Xtv" firstAttribute="top" secondItem="F7e-8I-kbR" secondAttribute="top" id="RKW-FW-FTo"/>
+                            <constraint firstAttribute="bottom" secondItem="mps-Wp-Xtv" secondAttribute="bottom" id="U9d-c4-cvh"/>
+                            <constraint firstItem="mps-Wp-Xtv" firstAttribute="trailing" secondItem="ldt-cF-JYf" secondAttribute="trailing" id="b4P-ab-dJr"/>
+                            <constraint firstItem="mps-Wp-Xtv" firstAttribute="leading" secondItem="ldt-cF-JYf" secondAttribute="leading" id="eXR-DC-fDf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="JPA-0e-x6B"/>
+                    <connections>
+                        <outlet property="logOutButton" destination="9rR-9x-lqJ" id="Q6c-oj-FWq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Peq-ib-KdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JProfile" width="942" height="1178"/>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="arrow.up" catalog="system" width="118" height="128"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="off" width="48" height="26"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="Background">
+            <color red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BaseColor">
+            <color red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DisabledButton">
+            <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Error">
+            <color red="1" green="0.35686274509803922" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Font2">
+            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryBlack">
+            <color red="0.30196078431372547" green="0.29411764705882354" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryButton">
+            <color red="0.91764705882352937" green="0.92941176470588238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
